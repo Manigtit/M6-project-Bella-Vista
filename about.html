@@ -1,0 +1,181 @@
+/* Genbruglige variabler til farver */
+:root {
+  --beige: #f5efe6;
+  --cream: #fff8f0;
+  --green: #2f5d50;
+  --red: #8b2e2e;
+  --espresso: #2b2118;
+  --muted: #6f6257;
+  --border: #d8cbb8;
+}
+
+/* Global styling for alt inden for body-tagget */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: var(--beige);
+  color: var(--espresso);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+}
+
+/* Styling til genbruglige komponenter på siderne */
+.custom-navbar {
+  background: rgba(245, 239, 230, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border);
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--green);
+}
+
+.nav-link {
+  color: var(--espresso);
+  font-weight: 700;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--red);
+}
+
+.eyebrow {
+  color: var(--red);
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.85rem;
+}
+
+.btn-main {
+  background-color: var(--green);
+  color: white;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-main:hover {
+  background-color: #24483e;
+  color: white;
+}
+
+.btn-outline-custom {
+  border: 2px solid white;
+  color: white;
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  font-weight: 700;
+}
+
+.btn-outline-custom:hover {
+  background-color: white;
+  color: var(--espresso);
+}
+
+.btn-light-custom {
+  background-color: var(--cream);
+  color: var(--red);
+  border-radius: 999px;
+  padding: 0.85rem 1.6rem;
+  font-weight: 700;
+}
+
+.dish-card {
+  background-color: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 18px 40px rgba(43, 33, 24, 0.08);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.dish-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 50px rgba(43, 33, 24, 0.14);
+}
+
+.dish-card img {
+  height: 240px;
+  object-fit: cover;
+}
+
+.card-title {
+  color: var(--green);
+  font-size: 1.5rem;
+}
+
+.card-text {
+  color: var(--muted);
+}
+
+.price {
+  color: var(--red);
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.footer {
+  background-color: var(--espresso);
+  color: var(--cream);
+}
+
+.footer p {
+  color: #d8cbb8;
+  margin-bottom: 0.4rem;
+}
+
+.page-hero {
+  min-height: 55vh;
+  padding-top: 110px;
+  background:
+    linear-gradient(rgba(43, 33, 24, 0.62), rgba(43, 33, 24, 0.62)),
+    url("../assets/images/menu-hero.jpg") center/cover no-repeat;
+  color: white;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+}
+
+.page-hero .lead {
+  max-width: 680px;
+}
+
+.custom-input {
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  padding: 0.9rem 1rem;
+  background-color: white;
+  color: var(--espresso);
+}
+
+.custom-input:focus {
+  border-color: var(--green);
+  box-shadow: 0 0 0 0.2rem rgba(47, 93, 80, 0.15);
+}
+
+.form-label {
+  font-weight: 700;
+  color: var(--espresso);
+}
+
+.rounded-custom {
+  border-radius: 28px;
+}
+
+.shadow-custom {
+  box-shadow: 0 24px 60px rgba(43, 33, 24, 0.14);
+}
